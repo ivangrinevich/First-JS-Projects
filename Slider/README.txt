@@ -1,0 +1,1 @@
+You also can change slides using 'ArrowUp' and 'ArrowDown' keyboard buttons
