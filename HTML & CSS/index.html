@@ -8,26 +8,91 @@
     <meta name="keywords" content="html, css, first, project">
     <meta name="description" content="My first web-site">
     <title>First web-site</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <img src="img/photo_2022-07-07_19-03-40.jpg" alt="My photo" width="200">
-    <h1>Ivan Grinevich</h1>
-    <p>Я <strong>студент</strong> 3-го курса <strong>БГУ</strong>.
-       <br> 
-       Хочу <em>изучить программирование</em> досканально.
-    </p>
-    <h2>Мои Хобби</h2>
+    <div class="container">
+        <div class="info">
+            <img src="img/photo_2022-07-07_19-03-40.jpg" alt="My photo" class="avatar">
+            <div class="info-text">
+                <h1>Ivan Grinevich</h1>
+                <p>Я <strong>студент</strong> 3-го курса <strong>БГУ</strong>.
+                    <br>
+                    Хочу <em>изучить программирование</em> досканально.
+                </p>
 
-    <ul>
-        <li>Футбол</li>
-        <li>Волейбол</li>
-        <li>Прогулки</li>
-        <li>Программирование</li>
-        <li>Сон</li>
-    </ul>
-    <h2>Мои соцсети</h2>
-    <a href="https://vk.com/m1croman" target="_blank">VK</a> | <a href="https://www.instagram.com/_m1croman_/" target="_blank">Instagram</a> | <a href="https://t.me/m1cr0man" target="_blank">Telegram</a>
+                <h4>Мои соцсети</h4>
+                <a href="https://vk.com/m1croman" target="_blank">VK</a> | <a
+                    href="https://www.instagram.com/_m1croman_/" target="_blank">Instagram</a> | <a
+                    href="https://t.me/m1cr0man" target="_blank">Telegram</a>
+            </div>
+        </div>
+
+        <div class="card bg-green">
+            <h2>Мои Хобби</h2>
+
+            <ul class="list">
+                <li>Футбол</li>
+                <li>Волейбол</li>
+                <li>Прогулки</li>
+                <li>Программирование</li>
+                <li>Сон</li>
+            </ul>
+        </div>
+
+        <div class="card bg-red">
+            <h2>Пройденные курсы</h2>
+
+            <ul type="circle" class="link-list">
+                <li>Поколение Python</li>
+                <li>ООП в Python</li>
+                <li>HTMl & CSS</li>
+            </ul>
+        </div>
+
+        <div class="card bg-yellow">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>BSU</td>
+                        <td>Student</td>
+                        <td>2020-present</td>
+                    </tr>
+                    <tr>
+                        <td>EPAM</td>
+                        <td>Intern</td>
+                        <td>2022</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        
+
+        <form action="/" class="form">
+            <h2>Связаться со мной</h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+                <div class="form-group">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Ваше сообщение:</label>
+                <br>
+                <textarea name="message" id="message" cols="20" rows="5" placeholder="Введите сообщение"></textarea>
+            </div>
+            <input type="submit" value="Отправить" class="btn">
+
+
+        </form>
+    </div>
 </body>
 
 </html>
